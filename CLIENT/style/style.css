@@ -1,0 +1,359 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-size: 62.5%;
+    font-family: 'Barlow Condensed', 'sans-serif';
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+  
+button,
+a 
+{
+    cursor: pointer;
+    color: inherit;
+}
+  
+textarea 
+{
+    resize: none;
+}
+  
+button,
+textarea,
+select
+{
+    appearance: none !important;
+    border-radius: 0;
+}
+
+/* CSS RESET */
+
+
+/* IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* IMPORT */
+
+
+/* ROOT CSS VARIABLES */
+
+:root 
+{
+    /* COLOR */
+
+    --darkgray: #131517;
+    --lightgray: #191E23;
+    --white: #FFFFFF;
+    --primary: #FF2775;
+    --secondary: #00E9D4;
+    --yellow: #FFEE33;
+
+    /* COLOR */
+
+    /* FONT */
+    --fs-xl: clamp(5rem, -0.875rem + 8.333vw, 7.2rem);
+    --fs-l: clamp(2.9rem, calc(-1.16rem + 4.5vw), 3.6rem);
+    --fs-md: clamp(3.2rem, calc(-1.16rem + 7.95vw), 4.8rem);
+    --fs-s: clamp(1.6rem);
+}
+
+
+
+/* FONT CSS PROPERTIES */
+
+p
+{
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+
+h1
+{
+    font-size: var(--fs-xl);
+}
+
+h1 span
+{
+    font-size: var(--fs-xl);
+    color: var(--primary);
+}
+
+h1 span:last-child
+{
+    color: var(--secondary);
+}
+
+h2
+{
+    font-size: var(--fs-md);
+    margin-bottom: 20px;
+}
+
+h2 span
+{
+    font-size: var(--fs-md);
+    color: var(--primary);
+}
+.offer-section h2 span
+{
+    color: var(--secondary);
+}
+
+h3
+{
+    font-size: var(--fs-l);
+    font-weight: 200;
+}
+
+h4
+{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+h5
+{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* FONT CSS PROPERTIES */
+
+
+
+
+
+/* BODY CSS PROPERTIES */
+
+body
+{
+    background-color: var(--darkgray);
+    color: var(--white);
+}
+
+/* BODY CSS PROPERTIES */
+
+
+
+
+/* BUTTON CSS PROPERTIES */
+
+.primary-button
+{
+/*     position: relative;
+    background-color: var(--darkgray);
+    color: var(--white);
+    padding: 10px 60px 10px 30px;
+    width: 10px;
+    border: 3px solid var(--primary);
+    border-radius: 5px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-top: 30px; */
+}
+
+.primary-button
+{
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+/* BUTTON CSS PROPERTIES */
+
+/* LAYOUT CSS PROPERTIES */
+
+section
+{
+    padding: 10px;
+    width: 95%;
+    max-width: 1140px;
+    margin: 150px auto
+}
+
+section:first-child
+{
+    margin-top: 0px;
+}
+
+/* LAYOUT CSS PROPERTIES */
+
+
+/* HERO SECTION */
+
+.hero-section div h1,
+.hero-section div h3
+{
+    padding-bottom: 30px;
+}
+
+
+.hero-section div img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.hero-section div:last-child
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section div:last-child #javascript
+{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    animation: MoveUpDown 2s linear infinite;
+    transition: all ease-in-out;
+}
+
+.hero-section div:last-child #figma
+{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    animation: MoveUpDown 2s linear infinite;
+    transition: all ease-in-out;
+}
+
+@keyframes MoveUpDown {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 10px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+
+/* ICEBREAKER SECTION */
+
+.icebreaker-section
+{
+    position: relative;
+}
+
+.icebreaker-section img
+{
+    position: absolute;
+    right: 0;
+    transform: rotate(-15deg);
+}
+
+.icebreaker-section p
+{
+    font-size: 2.4rem;
+}
+
+/* ICEBREAKER SECTION */
+
+/* OFFER SECTION */
+
+
+.offer-section .offer-card-wrapper .offer-card
+{
+    background-color: var(--lightgray);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+.offer-section .offer-card-wrapper .offer-card div
+{
+    width: fit-content;
+    background-color: var(--primary);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.offer-section .offer-card-wrapper .offer-card h4
+{
+    margin: 15px 0px;
+}
+
+.offer-section .offer-gift
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 50px;
+    padding: 0px;
+}
+
+.offer-section .offer-gift button
+{
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    height: 50px;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+
+.closed
+{
+    display: none;
+}
+
+.open
+{
+    display: flex;
+    border: 1px solid var(--white);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.offer-section .offer-gift h5
+{
+    color: var(--lightgray);
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+
+
+
+@media only screen and (min-width: 768px)
+{
+    .hero-section
+    {
+        display: flex;
+    }
+    .hero-section div,
+    .icebreaker-section div
+    {
+        width: 50%;
+    }
+    .offer-section .offer-card-wrapper
+    {
+        display: flex;
+        gap: 20px;
+    }
+
+}
