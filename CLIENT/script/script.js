@@ -1,25 +1,27 @@
 function loadEvent() {
-    console.log("dwadawdawdaw")
-/*     function toggleGiftBox() {
-        let gift = document.getElementById("giftWrapper");
-       let giftButton = document.getElementById("giftButton"); 
+    console.log("Your website is loaded.")
 
-        if (gift.classList.contains("closed")) {
-            gift.classList.remove("closed")
-            gift.classList.add("open")
-           giftButton.classList.remove("button-closed") 
+    function toggleGiftBox(){
+        console.log("Function working.")
+        let giftWrapper = document.getElementById("giftWrapper");
+        giftWrapper.classList.toggle("close")
+        giftWrapper.style.transition = 'all 3s ease-in-out;'
+        giftWrapper.style.backgroundColor = 'red'
+/*         console.log(giftWrapper)
+        if(giftWrapper.classList.contains("gift-wrapper"))
+        {
+            giftWrapper.classList.add("open")
+            giftWrapper.classList.remove("close")
         }
-        else if (gift.classList.contains("open")) {
-            gift.classList.remove("open")
-            gift.classList.add("closed")
-           giftButton.classList.add("button-closed") 
-        } 
-
+        else 
+        {
+            giftWrapper.classList.add("close")
+            giftWrapper.classList.remove("open")
+        } */
     }
-     */
-    let giftButtons = document.getElementById("giftButton");
-    giftButtons.addEventListener("click", console.log(giftButtons))
 
+    let gift = document.getElementById("giftButton");
+    gift.addEventListener("click", toggleGiftBox)
     
   
 };
