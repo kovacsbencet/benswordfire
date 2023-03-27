@@ -1,0 +1,1153 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    list-style: none;
+    font-size: 62.5%;
+    font-family: 'Barlow Condensed', 'sans-serif';
+    scroll-behavior: smooth;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a img 
+{
+    border: none;
+}
+  
+button,
+a 
+{
+    cursor: pointer;
+    color: inherit;
+}
+  
+textarea 
+{
+    resize: none;
+}
+  
+button,
+textarea,
+select
+{
+    appearance: none !important;
+    border-radius: 0;
+}
+
+/* CSS RESET */
+
+
+/* IMPORT */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* IMPORT */
+
+
+/* ROOT CSS VARIABLES */
+
+:root 
+{
+    /* COLOR */
+
+    --darkgray: #131517;
+    --lightgray: #191E23;
+    --white: #FFFFFF;
+    --primary: #FF2775;
+    --secondary: #00E9D4;
+    --yellow: #FFEE33;
+    --success: #70E000;
+    --error: #D90429;
+    --overlay: rgba(25, 30, 35, 0.30);
+
+    /* COLOR */
+
+
+    /* FONT */
+
+    --fs-xxl: clamp(11rem, 10.7692rem + 1.0256vw, 12rem);
+    --fs-xl: clamp(6.5rem, 6.5rem + 0vw, 6.5rem);;
+    --fs-l: clamp(2.9rem, calc(-1.16rem + 4.5vw), 3.6rem);
+    --fs-md: clamp(3.2rem, calc(-1.16rem + 7.95vw), 4.8rem);
+    --fs-s: clamp(1.6rem);
+
+    /* FONT */
+}
+
+
+
+/* FONT CSS PROPERTIES */
+
+p
+{
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+/* ----- HERO FONT CSS -----*/
+
+
+.hero-section .hero-content
+{
+    text-align: center;
+}
+
+.hero-section h1, 
+.hero-section h1 span
+{
+    font-size: clamp(8.3rem, 6.7538rem + 6.8718vw, 15rem);
+}
+
+.hero-section h1 span
+{
+    color: var(--primary);
+}
+
+.hero-section h2, .hero-section h2 span
+{
+    font-size: clamp(5rem, 4.5154rem + 2.1538vw, 7.2rem);
+    line-height: 8rem;
+    margin-bottom: 30px;
+}
+
+.hero-section h2 span
+{
+    color: var(--secondary);
+    position: relative;
+}
+
+.hero-section h2 span::after
+{
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    right: -12px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--yellow);
+    border-radius: 50px;
+}
+
+.hero-section h3
+{
+    font-size: clamp(2.9rem, 2. 462rem + 1.1282vw, 4rem);
+    font-weight: 200;
+}
+
+
+/* ----- HERO FONT CSS -----*/
+
+
+/* ----- BRIDGE FONT CSS -----*/
+
+.bridge-section h4,
+.bridge-section span
+{
+    font-size: clamp(4rem, 3.5385rem + 2.0513vw, 6rem);
+    font-weight: 700;
+    line-height: 5rem;
+}
+
+.bridge-section span
+{
+    color: var(--primary);
+}
+
+.bridge-section p
+{
+    max-width: 500px;
+    margin: 3rem 0rem;
+}
+
+/* ----- BRIDGE FONT CSS -----*/
+
+
+/* ----- SERVICES FONT CSS -----*/
+
+
+.services-section .services-left span,
+.offer-section .offer-left span,
+.contact-section .contact-left span
+{
+    font-weight: 600;
+    font-size: clamp(3.5rem, 2.8538rem + 1.5385vw, 5rem);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.services-section .services-left h2,
+.offer-section .offer-left h2,
+.personal-section .personal-right h2,
+.contact-section .contact-left h2
+{
+    color: var(--secondary);
+    font-size: clamp(10rem, 8.4462rem + 5.1282vw, 15rem);
+    line-height: 10rem;
+}
+
+.services-section .services-left h3,
+.offer-section .offer-left h3,
+.personal-section .personal-right h3,
+.contact-section .contact-left h3
+{
+    margin: 3rem 0rem;
+}
+
+
+
+/* ----- SERVICES FONT CSS -----*/
+
+
+/* ----- OFFER FONT CSS ----- */
+
+.offer-section .offer-right .offer-card p
+{
+    font-size: 2.4rem;
+}
+
+h3
+{
+    font-size: var(--fs-l);
+    font-weight: 200;
+}
+
+h4
+{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+h5
+{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.article-section p
+{
+    font-size: 2.4rem;
+}
+
+.article-section div ul li,
+.offer-text ul li
+{
+    font-size: 3.6rem;
+    font-weight: 400;
+}
+
+.offer-section .offer-left h4
+{
+    font-size: 6.5rem;
+}
+
+
+.offer-section .offer-left h2
+{
+    font-size: clamp(10rem, 8.4462rem + 5.1282vw, 15rem);
+}
+
+.offer-section .offer-left ul
+{
+    margin-top: 30px;
+}
+
+.offer-section .offer-left ul li
+{
+    font-size: 2.2rem;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    line-height: 2rem;
+    margin-bottom: 15px;
+}
+
+.offer-section .offer-left ul li:last-child
+{
+    margin-bottom: 0px;
+}
+
+
+.offer-section .offer-left ul li::before
+{
+    content: url(../images/checkmark.png);
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+/* ----- FEATURE FONT CSS ----- */
+.feature-section .feature-title h2
+{
+    font-size: clamp(5.1rem, 4.9385rem + 0.7179vw, 5.8rem);
+}
+
+
+/* ----- PERSONAL FONT CSS ----- */
+
+
+/* ----- CONTACT FONT CSS ----- */
+
+.contact-section .contact-section-left h2
+{
+    font-size: clamp(5.1rem, 4.9385rem + 0.7179vw, 5.8rem);
+}
+
+.contact-section .contact-section-left .contact-info-wrapper .contact-info div p
+{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.contact-section .contact-section-left .contact-info-wrapper .contact-info div a
+{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+option
+{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+/* ----- FOOTER FONT CSS ----- */
+
+footer section div h3
+{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+footer section div ul li
+{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3rem;
+    padding: 5px 0px;
+}
+
+
+/* ----- FOOTER FONT CSS -----*/
+
+
+/* FONT CSS PROPERTIES */
+
+
+/* BODY CSS PROPERTIES */
+
+body
+{
+    background-color: var(--darkgray);
+    color: var(--white);
+}
+
+/* BODY CSS PROPERTIES */
+
+
+
+/* BUTTON CSS PROPERTIES */
+
+.primary-button
+{
+    position: relative;
+    color: var(--lightgray);
+    background-color: var(--primary);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 0px 0px var(--secondary) inset;
+    transition: 0.5s ease-in-out;
+}
+
+.primary-button:hover,
+.submit-button:hover
+{
+    box-shadow: 600px 0px 0px 0px var(--secondary) inset;
+}
+
+.secondary-button
+{
+    background-color: var(--darkgray);
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.15rem;
+    border: 3px solid var(--secondary);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+}
+
+.submit-button
+{
+    position: relative;
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--darkgray);
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border-radius: 5px;
+    padding: 0.8rem 2rem;
+    box-shadow: 0px 0px 0px 0px var(--secondary) inset;
+    transition: 0.5s ease-in-out;
+}
+
+/* BUTTON CSS PROPERTIES */
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* LAYOUT CSS PROPERTIES */
+
+section
+{
+    position: relative;
+    width: 90%;
+    max-width: 1140px;
+    margin: 5rem auto;
+}
+
+/* LAYOUT CSS PROPERTIES */
+
+/* HEADER SECTION */
+
+header
+{
+    margin-bottom: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--darkgray);
+    border-bottom: 1px solid var(--primary);
+}
+
+
+.header-section
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.header-section .primary-button
+{
+    margin-top: 0px;
+}
+
+.header-section div h3
+{
+    font-weight: 600;
+}
+
+
+.header-section nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-section nav ul
+{
+    display: flex;
+}
+
+.header-section nav ul li a
+{
+    position: relative;
+    padding: 0rem 1rem;
+    margin-right: 30px;
+    font-size: 2.4rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.header-section nav ul li a::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0%;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    transition: all .3s ease-in-out ;
+}
+
+.header-section nav ul li a:hover::before
+{
+    width: 100%;
+}
+
+.header-section nav ul li:last-child a::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    z-index: -1;
+}
+
+.header-section nav ul li:last-child a::after
+{
+    content: "New";
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    background-color: var(--primary);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 2rem;
+    border-radius: 2px;
+    padding: 0px 10px;
+    transition: all .3s ease-in-out;
+    z-index: -1;
+}
+
+.header-section nav ul li:last-child a:hover::before
+{
+    height: 50px;
+    background-color: var(--secondary);
+}
+
+
+@media only screen and (min-width: 992px)
+{
+    .hamburger
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px)
+{
+
+    .header-section nav
+    {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        transition: 0.3s;
+        background-color: var(--darkgray);
+    }
+    .header-section nav ul
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .header-section nav ul li a
+    {
+        margin-right: 0rem;
+    }
+    .header-section nav .primary-button
+    {
+        margin-top: 3rem;
+    }
+
+    .header-section nav.active
+    {
+        left: 0;
+    }
+    .hamburger
+    {
+        display: block;
+        position: relative;
+        user-select: none;
+        appearance: none;
+        border: none;
+        background: none;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .hamburger span
+    {
+        display: block;
+        position: relative;
+        width: 33px;
+        height: 3px;
+        background-color: var(--white);
+        border-radius: 6px;
+        margin-bottom: 7px;
+        transform-origin: 0 0;
+        transition: 0.5s;
+        z-index: 1;
+    }
+    
+    .hamburger:hover span:nth-child(2) 
+    {
+        transform: translateX(10px);
+        background-color: var(--primary);
+    }
+    
+    .hamburger.active span:nth-child(1) 
+    {
+        transform: translate(0px, -2px) rotate(45deg);
+    }
+    
+    .hamburger.active span:nth-child(2) 
+    {
+        transform: translateX(150px);
+    }
+    
+    .hamburger.active span:nth-child(3) 
+    {
+        transform: translate(-2px, 1px) rotate(-45deg);
+    }
+
+}
+
+
+/* HEADER SECTION */
+
+
+/* HERO SECTION */
+
+.hero-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+/*     background-image: url("../images/miami_web_design_and_web_development.png");
+ */    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.7;
+}
+
+
+.hero-section-buttons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+/* BRIDGE SECTION */
+
+.bridge-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%!important;
+    max-width: 100%!important;
+    background-color: var(--lightgray);
+    padding: 5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.bridge-section button
+{
+    margin-top: 0rem;    
+}
+
+
+
+
+
+
+/* BRIDGE SECTION */
+
+
+/* SERVICES SECTION */
+
+.serivces-section button
+{
+    margin-top: 3rem;
+}
+
+
+
+
+.services-section .services-left
+{
+    row-gap: 3rem;
+}
+
+
+.services-section .services-right
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    max-width: 550px;
+    max-height: 600px;
+    margin-left: 0rem!important;
+}
+
+
+
+.swiper .swiper-wrapper .swiper-slide
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    height: 500px;
+}
+
+
+
+
+.swiper-pagination
+{
+    position: absolute;
+    bottom: -40px!important;
+    left: 0px!important;
+    border-radius:5px;
+    padding: 1rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet
+{
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary);
+    opacity: .5;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active
+{
+    width: 30px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    transition: transform 800ms;
+    opacity: 1;
+    transition: all ease-in-out .3s;
+}
+
+.swiper .swiper-wrapper .swiper-slide .swiper-card
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: var(--lightgray);
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    border-radius: 5px;
+    padding: 3rem;
+    transition: .3s linear;
+}
+
+.swiper .swiper-wrapper .swiper-slide .swiper-card .slide-header img
+{
+    width: 50px;
+    background-color: var(--primary);
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.swiper .swiper-wrapper .swiper-slide .swiper-card .slide-header ul
+{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.swiper .swiper-wrapper .swiper-slide .swiper-card .slide-header ul li
+{
+    background-color: var(--secondary);
+    color: var(--lightgray);
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+}
+
+
+.swiper .swiper-wrapper .swiper-slide .swiper-card .slide-footer
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+/* OFFER SECTION */
+
+
+
+
+.offer-section .offer-left ul
+{
+    display: inline-block;
+    text-align: left;
+}
+
+
+
+.offer-section .offer-right
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.offer-section .offer-right .offer-card
+{
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 200px;
+    background-color: var(--lightgray);
+    padding: 2rem;
+    border-radius: 5px;
+    transition: top 800ms;
+}
+
+
+
+
+/* PERSONAL SECTION */
+
+
+
+
+
+/* RESPONSIVE CSS PROPERTIES*/
+
+
+
+
+
+@media only screen and (min-width: 992px)
+{
+    .offer-section
+    {
+        display: flex;
+    }
+    .offer-section .offer-left
+    {
+        text-align: left;
+    }
+    .offer-section .offer-right .offer-card:nth-child(1):hover,
+    .offer-section .offer-right .offer-card:nth-child(2):hover
+    {   
+        top: -10px;
+    }
+    .offer-section .offer-right .offer-card:nth-child(3):hover,
+    .offer-section .offer-right .offer-card:nth-child(4):hover
+    {   
+        top: 10px;
+    }
+}
+
+
+
+/* CONTACT SECTION */
+
+
+.contact-section .contact-left .contact-info-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+.contact-section .contact-left .contact-info-wrapper .contact-info
+{
+
+    display: flex;
+    align-items: center;
+    flex: 1 1 50%;
+    background-color: var(--lightgray);
+    border-radius: 5px;
+    padding: 0.45rem;
+}
+
+.contact-section .contact-left .contact-info-wrapper a
+{
+    font-size: 2rem;
+}
+
+
+.contact-section form
+{
+    background-color: var(--lightgray);
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.contact-section form .form-group
+{
+
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contact-section form .form-group div
+{
+    flex: 1 1 50%;
+}
+
+.contact-section form .form-group:nth-child(1),
+.contact-section form .form-group:nth-child(2)
+{
+    margin-top: 0rem;
+}
+
+
+
+.contact-section form .form-group label
+{
+    color: var(--white);
+    width: 100%;
+    font-size: 2.2rem;
+}
+
+.contact-section form input,
+.contact-section form select,
+.contact-section form textarea
+{
+    background-color: #20262e;
+    color: var(--white);
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 300;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 5px;
+    width: 100%;
+    transition: transform 800ms;
+}
+
+
+.contact-section form input:focus,
+.contact-section form select
+{
+    border: 1px solid var(--primary);
+    transition: all .3s ease-in-out;
+}
+
+.contact-section form input.success,
+.contact-section form select.success,
+.contact-section form textarea.success
+{
+    border: 1px solid var(--success);
+}
+
+.contact-section form input.error,
+.contact-section form select.error,
+.contact-section form textarea.error
+{
+    border: 1px solid var(--error);
+}
+
+.contact-section form .error
+{
+    color: var(--error);
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+
+.contact-section form .submit-button
+{
+    margin-top: 1rem;
+}
+
+
+
+@media only screen and (min-width: 992px)
+{
+    .contact-section
+    {
+        display: flex;
+    }
+}
+@media only screen and (min-width: 768px)
+{
+    .contact-section form .form-group
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .contact-section form .form-group:last-child
+    {
+        align-items: flex-end;
+    }
+}
+
+
+
+@media only screen and (min-width: 1100px)
+{
+    .article-section
+    {
+        display: flex;
+    }
+    .icebreaker-section div,
+    .article-section div,
+    {
+        width: 50%;
+    }
+
+}
+
+/* FOOTER SECTION */
+
+
+footer
+{
+    background-color: var(--lightgray);
+    padding: 5rem 0rem;
+    min-height: 500px;
+}
+
+
+
+@media only screen and (min-width: 1100px)
+{
+    footer section
+    {
+        display: flex;
+        gap: 2rem;
+    }
+    footer section div
+    {   
+        flex: 20%;
+    }
+}
+/* 
+.hidden
+{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+} */
+
+
+
+@media only screen and (min-width: 992px)
+{
+    section
+    {
+        margin: 15rem auto;
+    }
+    .services-section,
+    .offer-section,
+    .personal-section,
+    .contact-section
+    {
+        display: flex;
+        position: relative;
+        gap: 5rem;
+    }
+    .services-section .services-left,
+    .services-section .services-right,
+    .offer-section .offer-left,
+    .offer-section .offer-right,
+    .personal-section .personal-left,
+    .personal-section .personal-right,
+    .contact-section .contact-left,
+    .contact-section .contact-right
+    {
+        flex: 1 1 50%;
+        position: relative;
+    }
+}
+@media only screen and (max-width: 992px)
+{
+    .serivces-section .services-right,
+    .offer-section .offer-right,
+    .contact-section .contact-right
+    {
+        margin-top: 3rem;
+    }
+    .swiper
+    {
+        max-width: 100%;
+    }
+    .swiper-slide
+    {
+        width: 100%;
+    }
+
+}
