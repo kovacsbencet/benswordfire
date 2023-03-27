@@ -4,6 +4,7 @@ function loadEvent() {
 
 
   const swiper = new Swiper('.swiper', {
+    loop: true,
     effect: 'slide',
     slidesPerView: 1,
     spaceBetween: 20,
@@ -94,6 +95,7 @@ function loadEvent() {
   };
 
   const navigation = document.querySelector(".nav")
+  let navItems = document.querySelectorAll(".nav-item");
   const hamburger = document.querySelector(".hamburger");
 
   hamburger.addEventListener('click', function () {
@@ -103,10 +105,13 @@ function loadEvent() {
     console.log(navigation)
   })
 
-
-
-
-
+  let clickEvent = () => {
+    hamburger.classList.remove('active');
+    navigation.classList.remove('active')
+  }
+  navItems.forEach((item) => {
+    item.addEventListener('click', clickEvent)
+  });
 
 };
 window.addEventListener('load', loadEvent);

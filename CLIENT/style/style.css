@@ -44,14 +44,6 @@ select
 
 /* CSS RESET */
 
-
-/* IMPORT */
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/* IMPORT */
-
-
 /* ROOT CSS VARIABLES */
 
 :root 
@@ -74,7 +66,7 @@ select
     /* FONT */
 
     --fs-xxl: clamp(11rem, 10.7692rem + 1.0256vw, 12rem);
-    --fs-xl: clamp(6.5rem, 6.5rem + 0vw, 6.5rem);;
+    --fs-xl: clamp(6.5rem, 6.5rem + 0vw, 6.5rem);
     --fs-l: clamp(2.9rem, calc(-1.16rem + 4.5vw), 3.6rem);
     --fs-md: clamp(3.2rem, calc(-1.16rem + 7.95vw), 4.8rem);
     --fs-s: clamp(1.6rem);
@@ -83,8 +75,25 @@ select
 }
 
 
+/* GENERAL FONT CSS PROPERTIES */
 
-/* FONT CSS PROPERTIES */
+h3
+{
+    font-size: var(--fs-l);
+    font-weight: 200;
+}
+
+h4
+{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+h5
+{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
 
 p
 {
@@ -93,8 +102,28 @@ p
     line-height: 1.5em;
 }
 
-/* ----- HERO FONT CSS -----*/
+option
+{
+    font-size: 1.8rem;
+    font-weight: 300;
+}
 
+/* GENERAL FONT CSS PROPERTIES */
+
+
+/* HEADER FONT CSS */
+
+header .header-section h2,
+footer section h2
+{
+    font-size: 4rem;
+    font-style: italic;
+}
+
+/* HEADER FONT CSS */
+
+
+/* HERO FONT CSS */
 
 .hero-section .hero-content
 {
@@ -104,7 +133,7 @@ p
 .hero-section h1, 
 .hero-section h1 span
 {
-    font-size: clamp(8.3rem, 6.7538rem + 6.8718vw, 15rem);
+    font-size: clamp(8.3rem, 5.8538rem + 6.8718vw, 15rem);
 }
 
 .hero-section h1 span
@@ -112,11 +141,12 @@ p
     color: var(--primary);
 }
 
-.hero-section h2, .hero-section h2 span
+.hero-section h2, 
+.hero-section h2 span
 {
     font-size: clamp(5rem, 4.5154rem + 2.1538vw, 7.2rem);
     line-height: 8rem;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 .hero-section h2 span
@@ -143,16 +173,15 @@ p
     font-weight: 200;
 }
 
+/* HERO FONT CSS */
 
-/* ----- HERO FONT CSS -----*/
 
-
-/* ----- BRIDGE FONT CSS -----*/
+/* BRIDGE FONT CSS */
 
 .bridge-section h4,
 .bridge-section span
 {
-    font-size: clamp(4rem, 3.5385rem + 2.0513vw, 6rem);
+    font-size: 5rem;
     font-weight: 700;
     line-height: 5rem;
 }
@@ -168,10 +197,10 @@ p
     margin: 3rem 0rem;
 }
 
-/* ----- BRIDGE FONT CSS -----*/
+/* BRIDGE FONT CSS */
 
 
-/* ----- SERVICES FONT CSS -----*/
+/* SERVICES FONT CSS */
 
 
 .services-section .services-left span,
@@ -186,12 +215,17 @@ p
 
 .services-section .services-left h2,
 .offer-section .offer-left h2,
+.personal-section .personal-right span,
 .personal-section .personal-right h2,
 .contact-section .contact-left h2
 {
     color: var(--secondary);
     font-size: clamp(10rem, 8.4462rem + 5.1282vw, 15rem);
     line-height: 10rem;
+}
+.personal-section .personal-right span
+{
+    color: var(--white);
 }
 
 .services-section .services-left h3,
@@ -204,49 +238,20 @@ p
 
 
 
-/* ----- SERVICES FONT CSS -----*/
+/* SERVICES FONT CSS */
 
 
-/* ----- OFFER FONT CSS ----- */
+/* OFFER FONT CSS */
 
 .offer-section .offer-right .offer-card p
 {
     font-size: 2.4rem;
 }
 
-h3
-{
-    font-size: var(--fs-l);
-    font-weight: 200;
-}
-
-h4
-{
-    font-size: 2.4rem;
-    font-weight: 600;
-}
-
-h5
-{
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-
-.article-section p
-{
-    font-size: 2.4rem;
-}
-
-.article-section div ul li,
-.offer-text ul li
-{
-    font-size: 3.6rem;
-    font-weight: 400;
-}
 
 .offer-section .offer-left h4
 {
-    font-size: 6.5rem;
+    font-size: 3rem;
 }
 
 
@@ -257,17 +262,19 @@ h5
 
 .offer-section .offer-left ul
 {
-    margin-top: 30px;
+    margin-top: 1rem;
 }
 
 .offer-section .offer-left ul li
 {
-    font-size: 2.2rem;
-    font-weight: 200;
+    position: relative;
     display: flex;
     align-items: center;
+    font-size: 2.2rem;
+    font-weight: 200;
     line-height: 2rem;
     margin-bottom: 15px;
+    margin-left: 30px;
 }
 
 .offer-section .offer-left ul li:last-child
@@ -278,48 +285,26 @@ h5
 
 .offer-section .offer-left ul li::before
 {
-    content: url(../images/checkmark.png);
-    width: 20px;
+    content: url(../images/checkmark.webp);
+    position: absolute;
+    left: -30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
-}
-
-/* ----- FEATURE FONT CSS ----- */
-.feature-section .feature-title h2
-{
-    font-size: clamp(5.1rem, 4.9385rem + 0.7179vw, 5.8rem);
+    width: 15px;
 }
 
 
-/* ----- PERSONAL FONT CSS ----- */
 
 
-/* ----- CONTACT FONT CSS ----- */
+/* CONTACT FONT CSS */
 
-.contact-section .contact-section-left h2
+.contact-section .contact-left .contact-info p
 {
-    font-size: clamp(5.1rem, 4.9385rem + 0.7179vw, 5.8rem);
-}
-
-.contact-section .contact-section-left .contact-info-wrapper .contact-info div p
-{
-    font-size: 2rem;
+    font-size: clamp(5.6rem, 4.0462rem + 2.4615vw, 8rem);
     font-weight: 600;
 }
 
-.contact-section .contact-section-left .contact-info-wrapper .contact-info div a
-{
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-option
-{
-    font-size: 1.8rem;
-    font-weight: 300;
-}
 
 /* ----- FOOTER FONT CSS ----- */
 
@@ -332,10 +317,30 @@ footer section div h3
 
 footer section div ul li
 {
+    position: relative;
     font-size: 2rem;
     font-weight: 300;
     line-height: 3rem;
-    padding: 5px 0px;
+    padding: 5px 5px;
+    margin-left: 15px;
+}
+
+footer section div ul li::before
+{
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+}
+
+footer section div ul li:hover::before
+{
+    background-color: var(--secondary);
 }
 
 
@@ -364,8 +369,9 @@ body
     position: relative;
     color: var(--lightgray);
     background-color: var(--primary);
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 2.2rem;
+    font-weight: 800;
+    font-style: italic;
     line-height: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
@@ -373,27 +379,36 @@ body
     padding: 1rem 2rem;
     margin-top: 3rem;
     box-shadow: 0px 0px 0px 0px var(--secondary) inset;
-    transition: 0.5s ease-in-out;
+    transition: all 600ms ease-in-out;
+
 }
 
-.primary-button:hover,
-.submit-button:hover
+.primary-button:hover
 {
     box-shadow: 600px 0px 0px 0px var(--secondary) inset;
+    transform: scale(1.1);
 }
 
 .secondary-button
 {
     background-color: var(--darkgray);
     font-size: 2.2rem;
-    font-weight: 600;
+    font-weight: 800;
+    font-style: italic;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.15rem;
     border: 3px solid var(--secondary);
     border-radius: 5px;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     margin-top: 3rem;
+    transition: all 600ms ease-in-out;
+}
+.secondary-button:hover
+{
+    color: var(--darkgray);
+    background-color: var(--secondary);
+    transform: scale(1.1);
 }
 
 .submit-button
@@ -404,6 +419,7 @@ body
     color: var(--darkgray);
     font-size: 2.2rem;
     font-weight: 700;
+    font-style: italic;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
     border-radius: 5px;
@@ -411,6 +427,15 @@ body
     box-shadow: 0px 0px 0px 0px var(--secondary) inset;
     transition: 0.5s ease-in-out;
 }
+
+.submit-button:hover
+{
+    box-shadow: 600px 0px 0px 0px var(--secondary) inset;
+    transform: scale(.95);
+}
+
+
+
 
 /* BUTTON CSS PROPERTIES */
 
@@ -429,6 +454,7 @@ section
     width: 90%;
     max-width: 1140px;
     margin: 5rem auto;
+    scroll-margin-top: 15rem;
 }
 
 /* LAYOUT CSS PROPERTIES */
@@ -509,6 +535,15 @@ header
     width: 100%;
 }
 
+.header-section nav ul li:last-child a
+{
+    font-weight: 600;
+}
+.header-section nav ul li:last-child a:hover
+{
+    color: var(--darkgray);
+}
+
 .header-section nav ul li:last-child a::before
 {
     content: "";
@@ -521,6 +556,12 @@ header
     border-radius: 5px;
     transition: all .3s ease-in-out;
     z-index: -1;
+
+}
+.header-section nav ul li:last-child a:hover::before
+{
+    height: 50px;
+    background-color: var(--secondary);
 }
 
 .header-section nav ul li:last-child a::after
@@ -540,11 +581,8 @@ header
     z-index: -1;
 }
 
-.header-section nav ul li:last-child a:hover::before
-{
-    height: 50px;
-    background-color: var(--secondary);
-}
+
+
 
 
 @media only screen and (min-width: 992px)
@@ -555,7 +593,7 @@ header
     }
 }
 
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 1100px)
 {
 
     .header-section nav
@@ -653,6 +691,7 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20rem;
 }
 
 .hero-section::after
@@ -664,11 +703,12 @@ header
     transform: translate(-50%,-50%);
     width: 100%;
     height: 100%;
-/*     background-image: url("../images/miami_web_design_and_web_development.png");
- */    background-repeat: no-repeat;
+    background-image: url("../images/miami_web_design_and_web_development.webp");
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     opacity: 0.7;
+    z-index: -1;
 }
 
 
@@ -686,24 +726,30 @@ header
 
 .bridge-section
 {
+    width: 100%!important;
+    max-width: 1140px;
+    background-color: var(--lightgray);
+    padding: 2rem;
+}
+
+.bridge-section .bridge-left
+{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    width: 100%!important;
-    max-width: 100%!important;
-    background-color: var(--lightgray);
-    padding: 5rem;
-    border-radius: 5px;
-    text-align: center;
 }
+
 
 .bridge-section button
 {
     margin-top: 0rem;    
 }
 
-
+.bridge-section .bridge-right img
+{
+    box-shadow: 50px 10px 10px 10px var(--white) inset;
+}
 
 
 
@@ -798,6 +844,12 @@ header
     transition: .3s linear;
 }
 
+.swiper .swiper-wrapper .swiper-slide .swiper-card .slide-header h3
+{
+    font-weight: 600;
+    padding: 1rem 0rem;
+}
+
 .swiper .swiper-wrapper .swiper-slide .swiper-card .slide-header img
 {
     width: 50px;
@@ -837,16 +889,11 @@ header
 
 /* OFFER SECTION */
 
-
-
-
 .offer-section .offer-left ul
 {
     display: inline-block;
     text-align: left;
 }
-
-
 
 .offer-section .offer-right
 {
@@ -871,20 +918,35 @@ header
     transition: top 800ms;
 }
 
+.offer-section .offer-right .offer-card lord-icon
+{
+    width: 150px;
+    height: 150px;
+}
 
+.offer-section-buttons
+{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* OFFER SECTION */
 
 
 /* PERSONAL SECTION */
 
+.personal-section .personal-left
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
-
+/* PERSONAL SECTION */
 
 
 /* RESPONSIVE CSS PROPERTIES*/
-
-
-
-
 
 @media only screen and (min-width: 992px)
 {
@@ -916,8 +978,7 @@ header
 .contact-section .contact-left .contact-info-wrapper
 {
     display: flex;
-    flex-direction: column;
-    row-gap: 3rem;
+    gap: 3rem;
 }
 .contact-section .contact-left .contact-info-wrapper .contact-info
 {
@@ -961,8 +1022,6 @@ header
     margin-top: 0rem;
 }
 
-
-
 .contact-section form .form-group label
 {
     color: var(--white);
@@ -986,7 +1045,10 @@ header
     width: 100%;
     transition: transform 800ms;
 }
-
+.contact-section form select
+{
+    font-weight: 500;
+}
 
 .contact-section form input:focus,
 .contact-section form select
@@ -1016,7 +1078,6 @@ header
     padding: .5rem;
 }
 
-
 .contact-section form .submit-button
 {
     margin-top: 1rem;
@@ -1031,6 +1092,21 @@ header
         display: flex;
     }
 }
+
+@media only screen and (max-width: 480px)
+{
+    .hero-section-buttons
+    {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .hero-section-buttons button:last-child
+    {
+        margin-top: 0rem;
+    }
+}
+
+
 @media only screen and (min-width: 768px)
 {
     .contact-section form .form-group
@@ -1047,61 +1123,28 @@ header
     }
 }
 
-
-
-@media only screen and (min-width: 1100px)
-{
-    .article-section
-    {
-        display: flex;
-    }
-    .icebreaker-section div,
-    .article-section div,
-    {
-        width: 50%;
-    }
-
-}
-
 /* FOOTER SECTION */
 
 
 footer
 {
     background-color: var(--lightgray);
-    padding: 5rem 0rem;
-    min-height: 500px;
+    padding: 5rem auto;
 }
-
-
 
 @media only screen and (min-width: 1100px)
 {
     footer section
     {
         display: flex;
-        gap: 2rem;
+        gap: 5rem;
     }
     footer section div
     {   
-        flex: 20%;
+        flex: 1 1 25%;
     }
 }
-/* 
-.hidden
-{
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
 
-.show
-{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-} */
 
 
 
@@ -1111,6 +1154,18 @@ footer
     {
         margin: 15rem auto;
     }
+    .bridge-section
+    {
+        padding: 5rem;
+        border-radius: 5px;
+    }
+    .bridge-section .bridge-right
+    {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+    .bridge-section,
     .services-section,
     .offer-section,
     .personal-section,
@@ -1120,6 +1175,8 @@ footer
         position: relative;
         gap: 5rem;
     }
+    .bridge-section .bridge-left,
+    .bridge-section .bridge-right,
     .services-section .services-left,
     .services-section .services-right,
     .offer-section .offer-left,
@@ -1135,7 +1192,8 @@ footer
 }
 @media only screen and (max-width: 992px)
 {
-    .serivces-section .services-right,
+    .bridge-section .bridge-right,
+    .services-section .services-right,
     .offer-section .offer-right,
     .contact-section .contact-right
     {
@@ -1151,3 +1209,25 @@ footer
     }
 
 }
+
+
+/* WEBSITE SCROLL ANIMATION */
+
+/* 
+.hidden
+{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+} 
+*/
+
+/* WEBSITE SCROLL ANIMATION */

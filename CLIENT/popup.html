@@ -1,0 +1,175 @@
+<section class="bonus-section">
+    <div class="modal">
+        <div class="modal-header">
+            <h3 class="modal-title">Free Bonuses</h3>
+            <button type="button" class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <div>
+                <h4>1 Custom</h4>
+                <p>Marketing Strategy</p>
+            </div>
+            <div>
+                <h4>1 Custom</h4>
+                <p>Page On My Website</p>
+            </div>
+            <div>
+                <h4>2 Week</h4>
+                <p>Social Advertisement</p>
+            </div>
+            <div>
+                <h4>3 Posts</h4>
+                <p>On Social Media</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay">dwadaw</div>
+</section>
+
+<style>
+    /* BONUS FONT CSS */
+
+.bonus-section .modal .modal-header h3
+{
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.bonus-section .modal .modal-body h4
+{
+    color: var(--primary);
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bonus-section .modal .modal-body p
+{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+/* BONUS FONT CSS */
+
+
+
+.bonus-button
+{
+    background-color: var(--yellow);
+}
+
+.bonus-button:hover
+{
+    transform: scale(.95);
+}
+/* BONUS SECTION */
+
+.bonus-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto;
+    position: relative;
+}
+
+.bonus-section .modal
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 500px;
+    height: 500px;
+    max-width: 90%;
+    background-color: var(--lightgray);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.bonus-section .modal.active
+{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.bonus-section .modal-header
+{
+    height: 75px;
+    position: relative;
+}
+
+.bonus-section .modal-header .modal-title
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bonus-section .modal-header .close-button
+{
+    position: absolute;
+    top: -5px;
+    right: 15px;
+    font-size: 5rem;
+}
+
+.bonus-section .modal-body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 100%;
+    text-align: center;
+    gap: 3rem;
+}
+
+.bonus-section .modal-overlay
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.70);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.bonus-section .modal-overlay.active
+{
+    opacity: 1;
+    pointer-events: all;
+    z-index: 9998;
+}
+
+/* BONUS SECTION */
+</style>
+
+<script>
+      const openModalButton = document.querySelector(".bonus-button")
+  const closeModalButton = document.querySelector(".close-button");
+  const modal = document.querySelector(".modal");
+  const overlay = document.querySelector(".modal-overlay")
+
+  openModalButton.addEventListener('click', () =>{
+    modal.classList.add("active");
+    overlay.classList.add("active");
+  })
+
+  closeModalButton.addEventListener('click', () =>{
+    modal.classList.remove("active");
+    overlay.classList.remove("active");
+  })
+
+  overlay.addEventListener('click', () =>{
+    modal.classList.remove("active");
+    overlay.classList.remove("active");
+  })
+</script>

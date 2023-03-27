@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional web design and web development in Miami, including custom landing pages and complex web applications">
+    <meta name="keywords" content="miami web designer, miami web developer, ui design, web applications">
+    <meta name="author" content="Ben Swordfire">
 
     <title>Ben Swordfire - Miami Web Design And Web Development</title>
 
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
 </head>
 <body>
     <header>
         <section class="header-section">
-            <div><h3>benswordfire.</h3></div>
+            <div><h2>benswordfire.</h2></div>
             <nav class="nav">
                 <ul>
-                    <li><a href="#offerSection">Services</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">My Story</a></li>
-                    <li><a href="#offerSection">The Ultimate Facelift</a></li>
+                    <li><a class="nav-item" href="#services-section">Services</a></li>
+                    <li><a class="nav-item" href="#personal-section">My Story</a></li>
+                    <li><a class="nav-item" href="#offer-section">The Ultimate Facelift</a></li>
                 </ul>
-                <button type="button" class="primary-button" href="#contact-section">Start project!</button>
+                <a class="primary-button nav-item" href="#contact-section">Start project!</a>
             </nav>
             <button type="button" class="hamburger">
                 <span></span>
@@ -39,21 +40,27 @@
                 <h2>With Some <span>Spice</span></h2>
                 <h3>Professional web design and web<br>development in the Magic City.</h3>
                 <div class="hero-section-buttons">
-                    <button type="button" class="primary-button" href="#contact-section">Book A Call</button>
-                    <button type="button" class="secondary-button" href="#contact-section">The Ultimate Facelift</button>
+                    <a class="primary-button" href="#contact-section">Start project!</a>
+                    <a class="secondary-button" href="#offer-section">The Ultimate Facelift</a>
                 </div>
             </div>
         </section>
         <section class="bridge-section hidden">
-            <h4><span>POV:</span> Your website s*cks...</h4>
-            <p>
-                Everything is falling apart, white space, contrast and colour schemes are terms your website never
-                acknowledged. As years go by, you realize that MAYBE, your neighbour’s kid, Jimmy wasn’t the best choice
-                for this job. At least is was CHEAP...
-            </p>
-            <button type="button" class="primary-button">No more Jimmy websites!</button>
+            <div class="bridge-left">
+                <h4><span>POV:</span> Your website s*cks...</h4>
+                <p>
+                    Everything is falling apart. White space, contrast, and color
+                    schemes are terms that your website never acknowledged. As the
+                    years go by, you realize that maybe your neighbor's kid, Jimmy,
+                    wasn't the best choice for this job. At least he was CHEAP...
+                </p>
+                <button type="button" class="primary-button">No more Jimmy websites!</button>
+            </div>
+            <div class="bridge-right">
+                <img src="images/rage-work.webp" alt="User gets angry due to poor designed website.">
+            </div>
         </section>
-        <section class="services-section hidden">
+        <section id="services-section" class="services-section hidden">
             <div class="services-left">
                 <span>Check out the</span>
                 <h2>Services</h2>
@@ -73,8 +80,8 @@
                         <div class="swiper-slide">
                             <div class="swiper-card">
                                 <div class="slide-header">
-                                    <img src="images/premium-photography.png" alt="">
-                                    <h3 style="font-weight: 600;padding: 10px 0px;">Awesome UI Design</h3>
+                                    <img src="images/premium-photography.webp" alt="Awesome UI Design in Miami.">
+                                    <h3>Awesome UI Design</h3>
                                     <p>
                                         Creating an outstanding web layout using Figma's high-quality
                                         UI design tools. Figma also enables testing of interactive
@@ -84,6 +91,29 @@
                                         <li>#figma</li>
                                         <li>#illustrator</li>
                                         <li>#photoshop</li>
+                                    </ul>
+                                </div>
+                                <div class="slide-footer">
+                                    <button type="button" class="primary-button">I have a project.</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-card">
+                                <div class="slide-header">
+                                    <img src="images/premium-photography.webp" alt="Crisp Web Development In Miami">
+                                    <h3>Web Development</h3>
+                                    <p>
+                                        What's the point of having the best ingredients for your
+                                        spaghetti when you lack Grandma's secret sauce? Web development
+                                        is your sauce that helps everything come into place.
+                                    </p>
+                                    <ul>
+                                        <li>#html</li>
+                                        <li>#css</li>
+                                        <li>#javascript</li>
+                                        <li>#react</li>
+                                        <li>#vue</li>
                                         <li>#nodejs</li>
                                     </ul>
                                 </div>
@@ -95,18 +125,17 @@
                         <div class="swiper-slide">
                             <div class="swiper-card">
                                 <div class="slide-header">
-                                    <img src="images/premium-photography.png" alt="">
-                                    <h3 style="font-weight: 600;padding: 10px 0px;">Web Development</h3>
+                                    <img src="images/premium-photography.webp" alt="Fun And Interesting Copywriting In Miami">
+                                    <h3>Copywriting</h3>
                                     <p>
                                         Having a well-organized website content that is optimized for SEO
                                         can provide a significant advantage over your competitors by
                                         boosting your organic Google Search ranking.
                                     </p>
                                     <ul>
-                                        <li>#figma</li>
-                                        <li>#illustrator</li>
-                                        <li>#photoshop</li>
-                                        <li>#nodejs</li>
+                                        <li>#comic</li>
+                                        <li>#attention</li>
+                                        <li>#interesting</li>
                                     </ul>
                                 </div>
                                 <div class="slide-footer">
@@ -117,40 +146,17 @@
                         <div class="swiper-slide">
                             <div class="swiper-card">
                                 <div class="slide-header">
-                                    <img src="images/premium-photography.png" alt="">
-                                    <h3 style="font-weight: 600;padding: 10px 0px;">Copywriting</h3>
-                                    <p>
-                                        Having a well-organized website content that is optimized for SEO
-                                        can provide a significant advantage over your competitors by
-                                        boosting your organic Google Search ranking.
-                                    </p>
-                                    <ul>
-                                        <li>#figma</li>
-                                        <li>#illustrator</li>
-                                        <li>#photoshop</li>
-                                        <li>#nodejs</li>
-                                    </ul>
-                                </div>
-                                <div class="slide-footer">
-                                    <button type="button" class="primary-button">I have a project.</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-card">
-                                <div class="slide-header">
-                                    <img src="images/premium-photography.png" alt="">
-                                    <h3 style="font-weight: 600;padding: 10px 0px;">Premium Photography</h3>
+                                    <img src="images/premium-photography.webp" alt="Premium Photography In Miami">
+                                    <h3>Premium Photography</h3>
                                     <p>
                                         Great web design requires high-quality images that evoke an
                                         emotional connection with your prospects, representing the
                                         unique experience you're offering.
                                     </p>
                                     <ul>
-                                        <li>#figma</li>
-                                        <li>#illustrator</li>
-                                        <li>#photoshop</li>
-                                        <li>#nodejs</li>
+                                        <li>#hihquality</li>
+                                        <li>#animation</li>
+                                        <li>#colorful</li>
                                     </ul>
                                 </div>
                                 <div class="slide-footer">
@@ -161,34 +167,37 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-<!--                 <div class="swiper-navigation">
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div> -->
             </div>
         </section>
         <section class="bridge-section hidden">
-            <h4>You wanna play the big game</h4>
-            <p>
-                Some businesses are meant to conquer the market and some not. I only work
-                with people who conquer, there is no time to f*ck around and joke with
-                half-ass website that only give headache to your potential customers…
-
-            </p>
-            <button type="button" class="primary-button">No more Jimmy websites!</button>
+            <div class="bridge-left">
+                <h4>You wanna play the big game</h4>
+                <p>
+                    Some businesses are meant to conquer the market and some not. I only work
+                    with people who conquer, there is no time to f*ck around and joke with
+                    half-ass website that only give headache to your potential customers…
+                </p>
+                <button type="button" class="primary-button">No more Jimmy websites!</button>
+            </div>
+            <div class="bridge-right">
+                <img src="images/legend-dance.webp" alt="Client dances after getting a beautiful website">
+            </div>
         </section>
-        <section id="offerSection" class="offer-section hidden">
+        <section id="offer-section" class="offer-section hidden">
             <div class="offer-left">
                 <span>The Ultimate</span>
                 <h2>Facelift</h2>
                 <h3>All-in-one business package to conquer the online space and rise above your competitors.</h3>
+                <h4>Free Bonuses:</h4>
                 <ul>
-                    <li>Clean And Simple UI Design</li>
-                    <li>Well-written Content And Copy</li>
-                    <li>Well-written Content And Copy</li>
+                    <li>1 Custom Marketing Strategy</li>
+                    <li>1 Custom Page On My Website</li>
+                    <li>2 Week Social Advertisement</li>
+                    <li>3 Posts On Social Media</li>
                 </ul>
-<!--                 <div class="offer-section-buttons">
-                    <button type="button" class="secondary-button" href="#contact-section">Show Free Bonuses</button>
+<!--                <div class="offer-section-buttons">
+                    <button type="button" class="bonus-button">Unlock Bonuses!</button>
+                    <button type="button" class="primary-button">Start Project!</button>
                 </div> -->
             </div>
             <div class="offer-right">
@@ -199,7 +208,7 @@
                         delay="1000"
                         colors="primary:#ff2775,secondary:#00e9d4,tertiary:#00e9d4"
                         stroke="25"
-                        style="width:150px;height:150px">
+                        state="morph">
                     </lord-icon>
                     <p>Premium Photography</p>
                 </div>
@@ -210,8 +219,7 @@
                         delay="2000"
                         colors="primary:#ff2775,secondary:#00e9d4,tertiary:#00e9d4"
                         stroke="25"
-                        state="morph"
-                        style="width:150px;height:150px">
+                        state="morph">
                     </lord-icon>
                     <p>Creative Copywirting</p>
                 </div>
@@ -222,8 +230,7 @@
                         delay="3000"
                         colors="primary:#ff2775,secondary:#00e9d4,tertiary:#00e9d4"
                         stroke="25"
-                        state="morph"
-                        style="width:150px;height:150px">
+                        state="morph">
                     </lord-icon>
                     <p>Awesome UI Design</p>
                 </div>
@@ -234,19 +241,18 @@
                         delay="4000"
                         colors="primary:#ff2775,secondary:#00e9d4,tertiary:#00e9d4"
                         stroke="25"
-                        state="morph"
-                        style="width:150px;height:150px">
+                        state="morph">
                     </lord-icon>
                     <p>Crisp Development</p>
                 </div>
             </div>
         </section>
-        <section class="personal-section hidden">
+        <section id="personal-section" class="personal-section hidden">
             <div class="personal-left">
-                <img src="images/benswordfire.png" alt="">
+                <img src="images/ben-swordfire-miami-web-designer.webp" alt="Ben Swordfire Miami Web Designer">
             </div>
             <div class="personal-right">
-                <h2>Meet Ben</h2>
+                <h2><span>Meet </span>Ben</h2>
                 <h3>People suffer from useless and ugly websites, my goal is to </h3>
                 <p>
                     When it comes to websites, I strongly believe in keeping things
@@ -258,57 +264,14 @@
                 </p>
             </div>
         </section>
-        <section class="contact-section">
+        <section id="contact-section" class="contact-section">
             <div class="contact-left">
                 <span>Let's conquer!</span>
                 <h2>Contact</h2>
                 <h3>Write me an e-mail or slide in my DMs. I've provided plenty options for you to reach me.</h3>
-                <div class="contact-info-wrapper">
-                    <div class="contact-info">
-                        <div>
-                            <lord-icon
-                            src="https://cdn.lordicon.com/zpxybbhl.json"
-                            trigger="loop"
-                            delay="1000"
-                            colors="primary:#ff2775,secondary:#00e9d4,tertiary:#00e9d4"
-                            stroke="50"
-                            style="width:45px;height:45px">
-                            </lord-icon>
-                        </div>
-                        <div>
-                            <a href="">+1 786 220 4628</a>
-                        </div>
-                    </div>
-                    <div class="contact-info">
-                        <div>
-                            <lord-icon
-                            src="https://cdn.lordicon.com/rhvddzym.json"
-                            trigger="loop"
-                            delay="1000"
-                            colors="primary:#ff2775,secondary:#00e9d4,tertiary:#00e9d4"
-                            stroke="50"
-                            style="width:45px;height:45px">
-                            </lord-icon>
-                        </div>
-                        <div>
-                            <a href="">hey@benswordfire.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-info">
-                        <div>
-                            <lord-icon
-                            src="https://cdn.lordicon.com/tkgyrmwc.json"
-                            trigger="loop"
-                            delay="1000"
-                            colors="primary:#ff2775,secondary:#00e9d4,tertiary:#00e9d4"
-                            stroke="50"
-                            style="width:45px;height:45px">
-                            </lord-icon>
-                        </div>
-                        <div>
-                            <a href="">benswordfire</a>
-                        </div>
-                    </div>
+                <div class="contact-info">
+                    <p>+1 786 220 4628</p>
+                    <p>@benswordfire</p>
                 </div>
             </div>
             <div class="contact-right">
@@ -365,9 +328,8 @@
     <footer>
         <section>
             <div>
-                <img src="./images/benswordfire-favicon.png" alt="">
-                <h3>benswordfire.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nosturd ase.</p>
+                <h2>benswordfire.</h2>
+                <p>Professional web design and web development in the Magic City.</p>
             </div>
             <div>
                 <h3>Services</h3>
@@ -385,8 +347,6 @@
                     <li>+1 786 220 4628</li>
                     <li>benswordfire@gmail.com</li>
                 </ul>
-            </div>
-            <div>
                 <h3>Company Stuff</h3>
                 <ul>
                     <li>Privacy Policy</li>
@@ -396,6 +356,8 @@
             <div><h3>Company Stuff</h3></div>
         </section>
     </footer>
+    <script defer src="./script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.lordicon.com/ritcuqlt.js"></script>
 </body>
 </html>
