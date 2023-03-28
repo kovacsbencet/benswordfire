@@ -1,8 +1,5 @@
 function loadEvent() {
 
-  console.log("Your website is loaded.");
-
-
   const swiper = new Swiper('.swiper', {
     loop: true,
     effect: 'slide',
@@ -101,8 +98,6 @@ function loadEvent() {
   hamburger.addEventListener('click', function () {
     hamburger.classList.toggle('active');
     navigation.classList.toggle('active')
-    console.log(hamburger)
-    console.log(navigation)
   })
 
   let clickEvent = () => {
