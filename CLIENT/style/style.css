@@ -264,7 +264,7 @@ footer section h2
 
 .offer-section .offer-right .offer-card p
 {
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 
@@ -471,7 +471,7 @@ img
 section
 {
     position: relative;
-    width: 90%;
+    width: 95%;
     max-width: 1140px;
     margin: 10rem auto;
     scroll-margin-top: 15rem;
@@ -940,8 +940,8 @@ header
 
 .offer-section .offer-right .offer-card lord-icon
 {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
 }
 
 .offer-section-buttons
@@ -950,6 +950,41 @@ header
     align-items: center;
     gap: 2rem;
 }
+
+
+.offer-section .offer-right
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+@media only screen and (min-width: 768px)
+{
+    .offer-section
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    .offer-left
+    {
+        flex: 1 1 50%;
+        height: 500px;
+    }
+
+    .offer-right
+    {
+        flex: 1 1 50%;
+        display: grid;
+        height: 500px;
+        grid-template-columns: minmax(175px, 500px) minmax(175px, 500px);
+        grid-template-rows: minmax(175px, 200px) minmax(175px, 200px);
+    }
+
+}
+
 
 /* OFFER SECTION */
 
@@ -1178,7 +1213,7 @@ footer section
 
 
 
-@media only screen and (min-width: 992px)
+@media only screen and (min-width: 768px)
 {
     section
     {
@@ -1203,7 +1238,7 @@ footer section
     {
         display: flex;
         position: relative;
-        gap: 5rem;
+        gap: 1rem;
     }
     .bridge-section .bridge-left,
     .bridge-section .bridge-right,
@@ -1261,3 +1296,116 @@ footer section
 */
 
 /* WEBSITE SCROLL ANIMATION */
+
+
+
+/* TEST SECTION */
+
+.test-highlight
+{
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.test-section .test-title
+{
+    font-size: clamp(10rem, 8.4462rem + 5.1282vw, 15rem);
+    font-weight: 800;
+    color: var(--secondary);
+    line-height: 6rem;
+    margin-bottom: 3rem;
+}
+
+.test-section .test-subtitle
+{
+    font-size: clamp(2.9rem, calc(-1.16rem + 4.5vw), 3.6rem);
+    font-weight: 300;
+}
+
+
+.test-section
+{
+
+    max-width: 1140px;
+    width: 95%;
+
+}
+
+
+
+.test-box
+{
+    position: relative;
+    background-color: var(--lightgray);
+    padding: 2rem;
+    border-radius: 5px;
+    transition: top 800ms;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.test-box lord-icon
+{
+    width: calc(150px - 20px);
+    height: calc(150px - 20px);
+
+}
+.test-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.test-list li
+{
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 300px)
+{
+    .test-right
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 768px)
+{
+    .test-section
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .test-left
+    {
+        flex: 1 1 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .test-right
+    {
+        flex: 1 1 50%;
+        display: grid;
+        height: 500px;
+        grid-template-columns: minmax(175px, 500px) minmax(175px, 500px);
+        grid-template-rows: minmax(175px, 200px) minmax(175px, 200px);
+    }
+
+}
+
+
+/* TEST SECTION */
