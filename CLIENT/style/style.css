@@ -615,7 +615,10 @@ header
 
 @media only screen and (max-width: 1100px)
 {
-
+    .header-section
+    {
+        padding: 0rem;
+    }
     .header-section nav
     {
         position: fixed;
@@ -661,6 +664,7 @@ header
         background: none;
         cursor: pointer;
         z-index: 1;
+        margin-bottom: -7px;
     }
 
     .hamburger span
